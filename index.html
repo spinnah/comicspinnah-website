@@ -2,8 +2,24 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ComicSpinnah – Coming Soon</title>
+
+<title>ComicSpinnah – A Better Home for Your Comics (Coming Soon)</title>
 <link rel="icon" href="assets/img/comicspinnah-appicon-dark.png">
+
+<meta name="description" content="ComicSpinnah is a powerful, elegant comic library for collectors and storytellers. Coming soon to macOS.">
+
+<!-- Open Graph / social sharing -->
+<meta property="og:title" content="ComicSpinnah – A Better Home for Your Comics (Coming Soon)">
+<meta property="og:description" content="Organize, browse, and enjoy your comic collection with a fast, native macOS app. Coming soon.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://comic.spinnah.app/">
+<meta property="og:image" content="https://comic.spinnah.app/assets/img/hero-comicspinnah.webp">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ComicSpinnah – A Better Home for Your Comics (Coming Soon)">
+<meta name="twitter:description" content="Organize, browse, and enjoy your comic collection with a fast, native macOS app. Coming soon.">
+<meta name="twitter:image" content="https://comic.spinnah.app/assets/img/hero-comicspinnah.webp">
 
 <style>
   :root {
@@ -32,6 +48,23 @@
     text-align: center;
   }
 
+  header h1 {
+    font-size: clamp(2.25rem, 4vw, 2.75rem);
+    margin: 0 0 0.5rem;
+  }
+
+  header p.lead {
+    font-size: 1.125rem;
+    opacity: 0.9;
+    margin: 0 0 0.75rem;
+  }
+
+  .philosophy {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin: 0 0 1.5rem;
+  }
+
   .app-icon {
     margin-bottom: 1.5rem;
   }
@@ -42,35 +75,26 @@
     border-radius: 24px;
   }
 
-  h1 {
-    font-size: clamp(2.25rem, 4vw, 2.75rem);
-    margin: 0 0 0.5rem;
-  }
-
-  .lead {
-    font-size: 1.05rem;
-    opacity: 0.9;
-    margin: 0 0 1.25rem;
+  .hero-img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto 2rem;
+    display: block;
+    border-radius: 16px;
   }
 
   .badge {
     display: inline-block;
-    margin-bottom: 2rem;
-    padding: 0.25rem 0.75rem;
+    padding: 0.4rem 0.85rem;
     border-radius: 999px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
     border: 1px solid currentColor;
-    opacity: 0.8;
-  }
-
-  .hero-img {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto 2rem;
-    display: block;
-    border-radius: 16px;
+    opacity: 0.85;
+    margin-top: 0.5rem;
   }
 
   footer {
@@ -96,10 +120,10 @@
     <header>
       <div class="app-icon">
         <picture>
-          <!-- Light mode: dark icon -->
+          <!-- Light mode: dark icon on light background -->
           <source srcset="assets/img/comicspinnah-appicon-dark.png"
                   media="(prefers-color-scheme: light)">
-          <!-- Dark mode: light/default icon -->
+          <!-- Dark mode: light/default icon on dark background -->
           <source srcset="assets/img/comicspinnah-appicon-default.png"
                   media="(prefers-color-scheme: dark)">
           <img src="assets/img/comicspinnah-appicon-dark.png" alt="ComicSpinnah app icon">
@@ -107,21 +131,27 @@
       </div>
 
       <h1>ComicSpinnah</h1>
-      <p class="lead">A powerful, elegant comic library for collectors and storytellers.</p>
-      <div class="badge">Coming Soon</div>
+      <p class="lead">A better home for your comics, built for macOS.</p>
+      <p class="philosophy">
+        Native app. No subscriptions. No ads. No nonsense. ComicSpinnah is being designed for collectors who actually read and care about their library.
+      </p>
+      <span class="badge">Coming Soon</span>
     </header>
 
     <main>
+      <!-- Hero image -->
       <img
         src="assets/img/hero-comicspinnah.webp"
-        alt="ComicSpinnah hero artwork placeholder"
+        alt="ComicSpinnah hero preview"
         class="hero-img"
+        width="2400" height="1400"
       >
     </main>
 
     <footer>
       <p>© <span id="year"></span> Spinnah. Published by ShastLeLow.</p>
       <nav>
+        <a href="https://spinnah.app/philosophy.html">Philosophy</a>
         <a href="https://spinnah.app/privacy.html">Privacy</a>
         <a href="https://spinnah.app/support.html">Support</a>
         <a href="mailto:info@spinnah.app">Contact</a>
